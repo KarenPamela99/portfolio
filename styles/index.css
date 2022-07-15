@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
+
+/*-------------------- variables --------------------*/
+:root {
+  --dark-green: #002f33;
+  --white: #ffffff;
+  --light-blue: #f8fbfc;
+  --rose: #ffddd2;
+  --light-green: #00545b;
+}
+
+/*-------------------- reset default styles --------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*-------------------- rem hack --------------------*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  color: var(--dark-green);
+}
+
+/*-------------------- gral styles --------------------*/
+main {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-green);
+}
+
+img {
+  max-width: 75%;
+}
+
+#img__kukara {
+  max-width: 80%;
+}
+
+section {
+  width: 100%;
+}
+
+.fa-chevron-down,
+.fa-chevron-up {
+  animation: scroll 1.5s linear infinite;
+}
+
+@media only screen and (min-width: 430px) {
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 2.8rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  img {
+    max-width: 26%;
+  }
+
+  #img__kukara {
+    max-width: 45%;
+  }
+}
+
+/*-------------------- header --------------------*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem 1.6rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #f6f6f6;
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  z-index: 100;
+}
+
+.karen {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+}
+
+.nav__desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 430px) {
+  header {
+    padding: 1.8rem 15rem;
+  }
+  .nav__desktop {
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  .nav__mobile {
+    display: none;
+  }
+
+  .karen {
+    font-size: 2rem;
+  }
+}
+
+/*-------------------- hero --------------------*/
+
+.hero__section {
+  background-color: var(--light-blue);
+  height: 100vh;
+  margin-top: -2.16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__titles {
+  height: 50%;
+  padding-bottom: 15.84rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2.4rem;
+}
+
+.hero__projects {
+  height: 50%;
+  margin-top: -18rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/*-------------------- common styles --------------------*/
+.container {
+  background-color: var(--light-green);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 2.5rem;
+}
+
+.project__titles {
+  padding-bottom: 1.4rem;
+}
+
+.project__subtitles::after,
+.project__subtitles::before {
+  content: " ";
+  position: absolute;
+  width: 29px;
+  height: 0.5px;
+  background-color: currentColor;
+  top: 12px;
+}
+
+.project__subtitles::before {
+  left: -39px;
+}
+
+.project__subtitles::after {
+  right: -39px;
+}
+
+/*-------------------- zensave section --------------------*/
+
+.zensave__title {
+  color: var(--white);
+  font-weight: lighter;
+}
+
+.zensave__subtitle {
+  color: var(--white);
+  font-weight: lighter;
+  display: inline-block;
+  position: relative;
+}
+
+.zensave__next {
+  color: var(--white);
+  font-weight: lighter;
+  padding-bottom: 0.5rem;
+}
+
+.fa-chevron-down--white {
+  color: var(--white);
+}
+
+/*-------------------- storytel section --------------------*/
+.storytel__section {
+  background-color: var(--light-blue);
+  height: 100vh;
+}
+
+.storytel__subtitle {
+  display: inline-block;
+  position: relative;
+}
+/*-------------------- kukaramakara section --------------------*/
+
+.kukaramakara__section {
+  background-color: var(--rose);
+  height: 100vh;
+}
+
+.kukara__subtitle {
+  display: inline-block;
+  position: relative;
+}
+
+/*-------------------- contact section --------------------*/
+
+.contact__section {
+  background-color: var(--light-blue);
+  height: 100vh;
+}
+
+.icons__ytext {
+  margin-top: -6rem;
+}
+
+.icons {
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.icon__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+  background-color: var(--light-green);
+  transition: all 0.2s;
+}
+
+.contact_link {
+  padding: 25px;
+  border-radius: 50%;
+}
+
+.fa-envelope,
+.fa-linkedin-in,
+.fa-whatsapp {
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+.fa-whatsapp {
+  font-size: 2rem;
+}
+
+.icon__container:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: var(--light-blue);
+}
+
+.icon__container:hover .fa-linkedin-in {
+  color: var(--light-green);
+}
+
+.icon__container:hover .fa-whatsapp {
+  color: var(--light-green);
+}
+
+.icon__container:hover .fa-envelope {
+  color: var(--light-green);
+}
+
+/*-------------------- footer --------------------*/
+footer {
+  background-color: var(--light-green);
+  padding: 4.2rem 0rem;
+  text-align: center;
+  color: var(--white);
+  margin-top: -10.56rem;
+}
+
+/*-------------------- animations --------------------*/
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
