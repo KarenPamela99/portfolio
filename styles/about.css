@@ -251,12 +251,12 @@ header {
   .icon {
     width: 40%;
   }
-  .skills__part {
+  /* .skills__part {
     padding: 0rem -12rem;
-  }
+  } */
+
   .skills__box {
-    border: 3px solid var(--rose);
-    width: 70%;
+    width: 100%;
   }
 
   .icon__code {
@@ -265,6 +265,12 @@ header {
 
   .icon__motion {
     width: 100%;
+  }
+
+  .motion__subtitle {
+    white-space: nowrap;
+  }
+  .part2 {
   }
 }
 
@@ -288,6 +294,12 @@ header {
 
 .icons__software {
   width: 15%;
+}
+
+@media only screen and (min-width: 430px) {
+  .icons__software {
+    width: 5%;
+  }
 }
 
 /*-------------------- footer --------------------*/
