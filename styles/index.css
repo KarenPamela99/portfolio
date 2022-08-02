@@ -61,12 +61,8 @@ img {
   max-width: 75%;
 }
 
-#img__kukara {
+.img__mob_desk {
   max-width: 80%;
-}
-
-#img__goodtrade {
-  max-width: 44%;
 }
 
 section {
@@ -99,7 +95,7 @@ section {
     max-width: 26%;
   }
 
-  #img__kukara {
+  .img__mob_desk {
     max-width: 45%;
   }
 }
