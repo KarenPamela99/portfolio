@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
 
-@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css 420");
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css 420');
 
 /*-------------------- variables --------------------*/
 :root {
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 1.6rem;
   color: var(--dark-green);
 }
@@ -94,7 +94,7 @@ a {
 
 .lines::after,
 .lines::before {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 29px;
   height: 0.5px;
@@ -127,12 +127,22 @@ header {
 }
 
 .karen {
-  font-family: "Nanum Myeongjo", serif;
+  font-family: 'Nanum Myeongjo', serif;
   font-weight: 700;
 }
 
 .nav__desktop {
   display: none;
+}
+
+@media only screen and (min-width: 430px) {
+  .nav__desktop {
+    display: block;
+  }
+
+  .nav__mobile {
+    display: none;
+  }
 }
 
 /*-------------------- hero section --------------------*/
