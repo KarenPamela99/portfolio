@@ -150,10 +150,9 @@ header {
   justify-content: center;
 }
 
-#picture {
-  width: 100vh;
-  max-width: 60%;
-  padding-top: 6rem;
+.picture__img {
+  width: 70%;
+  padding-top: 7rem;
 }
 
 .hero__2ndpart {
@@ -161,7 +160,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2.5rem 4rem;
+  padding: 1rem 4rem;
 }
 
 .hero__description {
@@ -172,14 +171,16 @@ header {
   .hero__section {
     display: flex;
     flex-direction: row;
+    padding: 0 8rem;
+    background-color: var(--light-blue);
   }
 
   .picture {
-    width: 50%;
+    background-color: transparent;
   }
 
-  #picture {
-    max-width: fit-content;
+  .picture__img {
+    width: fit-content;
   }
 
   .hero__2ndpart {
@@ -191,7 +192,7 @@ header {
   }
 
   .hero__text {
-    padding-bottom: rem;
+    padding: 0 1rem;
   }
 }
 
