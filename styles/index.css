@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
 
 /*-------------------- variables --------------------*/
 :root {
@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 1.6rem;
   color: var(--dark-green);
 }
@@ -44,7 +44,7 @@ h2 {
   font-size: 2.8rem;
 }
 h3 {
-  font-family: "Nanum Myeongjo", serif;
+  font-family: 'Nanum Myeongjo', serif;
   font-size: 1.8rem;
 }
 
@@ -117,7 +117,7 @@ header {
 }
 
 .karen {
-  font-family: "Nanum Myeongjo", serif;
+  font-family: 'Nanum Myeongjo', serif;
   font-weight: 700;
 }
 
@@ -129,6 +129,7 @@ header {
   header {
     padding: 1.8rem 15rem;
   }
+
   .nav__desktop {
     display: flex;
     gap: 2.4rem;
@@ -188,7 +189,7 @@ header {
 
 .project__subtitles::after,
 .project__subtitles::before {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 29px;
   height: 0.5px;

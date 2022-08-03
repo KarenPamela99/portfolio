@@ -136,12 +136,21 @@ header {
 }
 
 @media only screen and (min-width: 430px) {
+  header {
+    padding: 1.8rem 15rem;
+  }
+
   .nav__desktop {
-    display: block;
+    display: flex;
+    gap: 2.4rem;
   }
 
   .nav__mobile {
     display: none;
+  }
+
+  .karen {
+    font-size: 2rem;
   }
 }
 
@@ -310,6 +319,68 @@ header {
   .icons__software {
     width: 5%;
   }
+}
+
+/*-------------------- contact section --------------------*/
+
+.contact__section {
+  background-color: var(--light-blue);
+  height: 100vh;
+}
+
+.icons__ytext {
+  margin-top: -6rem;
+}
+
+.icons {
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.icon__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+  background-color: var(--light-green);
+  transition: all 0.2s;
+}
+
+.contact_link {
+  padding: 25px;
+  border-radius: 50%;
+}
+
+.fa-envelope,
+.fa-linkedin-in,
+.fa-whatsapp {
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+.fa-whatsapp {
+  font-size: 2rem;
+}
+
+.icon__container:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: var(--light-blue);
+}
+
+.icon__container:hover .fa-linkedin-in {
+  color: var(--light-green);
+}
+
+.icon__container:hover .fa-whatsapp {
+  color: var(--light-green);
+}
+
+.icon__container:hover .fa-envelope {
+  color: var(--light-green);
 }
 
 /*-------------------- footer --------------------*/
