@@ -9,6 +9,7 @@
   --light-blue: #f8fbfc;
   --rose: #ffddd2;
   --light-green: #00545b;
+  --lighter-green: #006e78;
 }
 
 /*-------------------- reset default styles --------------------*/
@@ -89,14 +90,6 @@ section {
 
   h4 {
     font-size: 1.4rem;
-  }
-
-  img {
-    max-width: 26%;
-  }
-
-  .img__mob_desk {
-    max-width: 45%;
   }
 }
 
@@ -183,6 +176,10 @@ header {
   padding-top: 2.5rem;
 }
 
+.container__img {
+  width: 38rem;
+}
+
 .project__titles {
   padding-bottom: 1.4rem;
 }
@@ -203,6 +200,26 @@ header {
 
 .project__subtitles::after {
   right: -39px;
+}
+
+@media only screen and (min-width: 430px) {
+  .container__img {
+    width: 90rem;
+    transition: all 0.5s;
+  }
+
+  .container__img:hover {
+    transform: scale(1.02);
+  }
+
+  .container__img--mobiles {
+    width: 50rem;
+    transition: all 0.5s;
+  }
+
+  .container__img--mobiles:hover {
+    transform: scale(1.02);
+  }
 }
 
 /*-------------------- zensave section --------------------*/
@@ -252,7 +269,6 @@ header {
 }
 
 /*-------------------- contact section --------------------*/
-
 .contact__section {
   background-color: var(--light-blue);
   height: 100vh;
@@ -298,19 +314,7 @@ header {
 
 .icon__container:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-color: var(--light-blue);
-}
-
-.icon__container:hover .fa-linkedin-in {
-  color: var(--light-green);
-}
-
-.icon__container:hover .fa-whatsapp {
-  color: var(--light-green);
-}
-
-.icon__container:hover .fa-envelope {
-  color: var(--light-green);
+  background-color: var(--lighter-green);
 }
 
 /*-------------------- footer --------------------*/

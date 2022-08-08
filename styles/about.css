@@ -11,6 +11,7 @@
   --light-blue: #f8fbfc;
   --rose: #ffddd2;
   --light-green: #00545b;
+  --lighter-green: #006e78;
 }
 
 /*-------------------- reset default styles --------------------*/
@@ -322,7 +323,6 @@ header {
 }
 
 /*-------------------- contact section --------------------*/
-
 .contact__section {
   background-color: var(--light-blue);
   height: 100vh;
@@ -368,19 +368,7 @@ header {
 
 .icon__container:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-color: var(--light-blue);
-}
-
-.icon__container:hover .fa-linkedin-in {
-  color: var(--light-green);
-}
-
-.icon__container:hover .fa-whatsapp {
-  color: var(--light-green);
-}
-
-.icon__container:hover .fa-envelope {
-  color: var(--light-green);
+  background-color: var(--lighter-green);
 }
 
 /*-------------------- footer --------------------*/
