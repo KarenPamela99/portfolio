@@ -217,6 +217,15 @@ header {
 }
 
 /*-------------------- skills --------------------*/
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 3rem;
+}
+
 .skills__subtitles {
   color: var(--white);
   font-weight: lighter;
@@ -232,21 +241,11 @@ header {
 }
 
 .skills__part {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
   padding-bottom: 4rem;
 }
 
 .skills__box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  gap: 1.6rem;
-  /* border: 3px solid var(--rose); */
-  width: 40%;
+  width: 60%;
 }
 
 .icon {
@@ -259,46 +258,26 @@ header {
   width: 50%;
 }
 
-.software_link {
+.software__link {
   color: var(--white);
 }
 
 @media only screen and (min-width: 430px) {
   .skills {
-    display: flex;
-    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: baseline;
+    padding: 0 20rem;
   }
-
-  .icon {
-    width: 40%;
-  }
-  /* .skills__part {
-    padding: 0rem -12rem;
-  } */
 
   .skills__box {
-    width: 100%;
-  }
-
-  .icon__code {
-    width: 100%;
-  }
-
-  .icon__motion {
-    width: 100%;
-  }
-
-  .motion__subtitle {
-    white-space: nowrap;
-  }
-  .part2 {
+    width: 60%;
   }
 }
 
 /*-------------------- software --------------------*/
 .software__section {
-  background-color: var(--light-blue);
-  height: 100vh;
+  background-color: var(--rose);
 }
 
 .software__icons {
@@ -326,7 +305,6 @@ header {
 /*-------------------- contact section --------------------*/
 .contact__section {
   background-color: var(--light-blue);
-  height: 100vh;
 }
 
 .icons__ytext {
@@ -370,6 +348,10 @@ header {
 .icon__container:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: var(--lighter-green);
+}
+
+.go__top {
+  margin-top: -10rem;
 }
 
 /*-------------------- footer --------------------*/

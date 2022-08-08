@@ -271,7 +271,6 @@ header {
 /*-------------------- contact section --------------------*/
 .contact__section {
   background-color: var(--light-blue);
-  height: 100vh;
 }
 
 .icons__ytext {
