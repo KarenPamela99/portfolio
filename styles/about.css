@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
 
-@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css 420");
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css 420');
 
 /*-------------------- variables --------------------*/
 :root {
@@ -11,6 +11,7 @@
   --light-blue: #f8fbfc;
   --rose: #ffddd2;
   --light-green: #00545b;
+  --lighter-green: #006e78;
 }
 
 /*-------------------- reset default styles --------------------*/
@@ -28,7 +29,7 @@ html {
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 1.6rem;
   color: var(--dark-green);
 }
@@ -94,7 +95,7 @@ a {
 
 .lines::after,
 .lines::before {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 29px;
   height: 0.5px;
@@ -127,12 +128,31 @@ header {
 }
 
 .karen {
-  font-family: "Nanum Myeongjo", serif;
+  font-family: 'Nanum Myeongjo', serif;
   font-weight: 700;
 }
 
 .nav__desktop {
   display: none;
+}
+
+@media only screen and (min-width: 430px) {
+  header {
+    padding: 1.8rem 15rem;
+  }
+
+  .nav__desktop {
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  .nav__mobile {
+    display: none;
+  }
+
+  .karen {
+    font-size: 2rem;
+  }
 }
 
 /*-------------------- hero section --------------------*/
@@ -301,6 +321,55 @@ header {
   .icons__software {
     width: 5%;
   }
+}
+
+/*-------------------- contact section --------------------*/
+.contact__section {
+  background-color: var(--light-blue);
+  height: 100vh;
+}
+
+.icons__ytext {
+  margin-top: -6rem;
+}
+
+.icons {
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.icon__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+  background-color: var(--light-green);
+  transition: all 0.2s;
+}
+
+.contact_link {
+  padding: 25px;
+  border-radius: 50%;
+}
+
+.fa-envelope,
+.fa-linkedin-in,
+.fa-whatsapp {
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+.fa-whatsapp {
+  font-size: 2rem;
+}
+
+.icon__container:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: var(--lighter-green);
 }
 
 /*-------------------- footer --------------------*/
