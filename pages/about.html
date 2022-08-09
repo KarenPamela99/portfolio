@@ -16,19 +16,29 @@
   </head>
 
   <body>
-    <header>
-      <a class="karen" href="/">KAREN</a>
+    <!-- ------------------ HEADER ------------------ -->
+    <header class="header">
+      <a class="header__logo" href="/">KAREN</a>
 
-      <nav class="nav__desktop">
-        <a href="#">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a href="/pages/about.html" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
 
-      <nav class="nav__mobile">
-        <i class="fa-solid fa-bars"></i>
+        <div class="hamburguer">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
 
+    <!-- ------------------ MAIN ------------------ -->
     <main>
       <!--hero section-->
       <section class="hero__section">
@@ -201,8 +211,12 @@
       </section>
     </main>
 
+    <!-- ------------------ FOOTER ------------------ -->
     <footer>
       <p>&#169; 2022 · Made with <i class="fa-solid fa-heart"></i> by Karen</p>
     </footer>
+
+    <!-- ------------------ SCRIPT ------------------ -->
+    <script src="../script.js"></script>
   </body>
 </html>
