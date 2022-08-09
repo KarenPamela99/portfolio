@@ -146,6 +146,11 @@ header {
     gap: 2.4rem;
   }
 
+  .nav__desktop a:hover {
+    color: var(--light-green);
+    font-weight: bold;
+  }
+
   .nav__mobile {
     display: none;
   }
@@ -162,17 +167,11 @@ header {
   flex-direction: column;
   justify-content: space-between;
   margin-top: -5.5rem;
-}
-
-.picture {
-  background-color: var(--light-blue);
-  display: flex;
-  justify-content: center;
+  padding-top: 7rem;
 }
 
 .picture__img {
-  width: 70%;
-  padding-top: 7rem;
+  width: 30rem;
 }
 
 .hero__2ndpart {
@@ -191,16 +190,17 @@ header {
   .hero__section {
     display: flex;
     flex-direction: row;
-    padding: 0 8rem;
-    background-color: var(--light-blue);
+    padding-left: 10rem;
   }
 
   .picture {
+    align-self: flex-end;
     background-color: transparent;
   }
 
   .picture__img {
-    width: fit-content;
+    width: 65rem;
+    margin-bottom: -6px;
   }
 
   .hero__2ndpart {
@@ -223,6 +223,7 @@ header {
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
+  color: var(--white);
   gap: 3rem;
 }
 
@@ -233,10 +234,8 @@ header {
   position: relative;
 }
 
-#main__skills {
-  color: var(--light-blue);
-}
 .skills__h2 {
+  color: var(--white);
   font-weight: lighter;
 }
 
@@ -250,6 +249,7 @@ header {
 
 .icon {
   width: 70%;
+  margin-bottom: 1rem;
 }
 .icon_ux {
   width: 58%;
@@ -280,9 +280,12 @@ header {
   background-color: var(--rose);
 }
 
+.software__h2 {
+  color: var(--dark-green);
+}
+
 .software__icons {
   padding: 5rem 3rem;
-  margin-bottom: 30rem;
 }
 
 .software__part {
@@ -351,7 +354,7 @@ header {
 }
 
 .go__top {
-  margin-top: -10rem;
+  padding-bottom: 6rem;
 }
 
 /*-------------------- footer --------------------*/
