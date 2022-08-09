@@ -30,11 +30,13 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.6rem;
   color: var(--dark-green);
+  overflow-x: hidden;
 }
 
 /*-------------------- gral styles --------------------*/
 main {
   text-align: center;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -105,7 +107,7 @@ section {
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid #e2e2e2;
   backdrop-filter: blur(8px);
-  position: sticky;
+  position: fixed;
   top: 0rem;
   left: 0rem;
   width: 100%;
@@ -207,7 +209,6 @@ section {
 .hero__section {
   background-color: var(--light-blue);
   height: 100vh;
-  margin-top: -2.16rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -219,15 +220,26 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-top: -8rem;
   gap: 2.4rem;
 }
 
 .hero__projects {
   height: 50%;
-  margin-top: -18rem;
+  margin-top: -28rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+}
+
+@media only screen and (min-width: 430px) {
+  .hero__titles {
+    margin-top: 8rem;
+  }
+
+  .hero__projects {
+    margin-top: -18rem;
+  }
 }
 
 /*-------------------- common styles --------------------*/

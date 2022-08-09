@@ -32,11 +32,13 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.6rem;
   color: var(--dark-green);
+  overflow-x: hidden;
 }
 
 /*-------------------- gral styles --------------------*/
 main {
   text-align: center;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -123,7 +125,7 @@ a {
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid #e2e2e2;
   backdrop-filter: blur(8px);
-  position: sticky;
+  position: fixed;
   top: 0rem;
   left: 0rem;
   width: 100%;
@@ -225,25 +227,24 @@ a {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-top: -5.5rem;
-  padding-top: 7rem;
+  justify-content: center;
+  padding-top: 2rem;
 }
 
 .picture__img {
-  width: 30rem;
+  width: 22rem;
 }
 
 .hero__2ndpart {
   height: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1rem 4rem;
 }
 
 .hero__description {
-  padding-top: 3.4rem;
+  padding-top: 1rem;
 }
 
 @media only screen and (min-width: 430px) {
