@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
 
 /* @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css 420'); */
 
@@ -21,7 +21,7 @@
   box-sizing: border-box;
 }
 
-/*-------------------- rem hack --------------------*/
+/*-------------------- gral styles --------------------*/
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -29,13 +29,12 @@ html {
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.6rem;
   color: var(--dark-green);
   overflow-x: hidden;
 }
 
-/*-------------------- gral styles --------------------*/
 main {
   text-align: center;
   overflow-x: hidden;
@@ -101,7 +100,7 @@ a {
 
 .lines::after,
 .lines::before {
-  content: ' ';
+  content: " ";
   position: absolute;
   width: 29px;
   height: 0.5px;
@@ -121,9 +120,9 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 4rem;
+  padding: 1.5rem 4rem;
   background: rgba(255, 255, 255, 0.7);
-  border: 1px solid #e2e2e2;
+  border: 1px solid #e2e2e25f;
   backdrop-filter: blur(8px);
   position: fixed;
   top: 0rem;
@@ -133,7 +132,7 @@ a {
 }
 
 .header__logo {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: "Nanum Myeongjo", serif;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -194,7 +193,7 @@ a {
 
 @media only screen and (min-width: 430px) {
   .header {
-    padding: 1rem 10rem;
+    padding: 0.5rem 10rem;
     align-items: center;
   }
 

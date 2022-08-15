@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
 
 /*-------------------- variables --------------------*/
 :root {
@@ -19,7 +19,7 @@
   box-sizing: border-box;
 }
 
-/*-------------------- rem hack --------------------*/
+/*-------------------- gral styles --------------------*/
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -27,13 +27,12 @@ html {
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.6rem;
   color: var(--dark-green);
   overflow-x: hidden;
 }
 
-/*-------------------- gral styles --------------------*/
 main {
   text-align: center;
   overflow-x: hidden;
@@ -47,7 +46,7 @@ h2 {
   font-size: 2.8rem;
 }
 h3 {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: "Nanum Myeongjo", serif;
   font-size: 1.8rem;
 }
 
@@ -65,7 +64,7 @@ a {
 }
 
 img {
-  max-width: 75%;
+  width: 85%;
 }
 
 .img__mob_desk {
@@ -99,13 +98,70 @@ section {
   }
 }
 
+/*-------------------- common styles --------------------*/
+.container {
+  background-color: var(--light-green);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 6rem;
+}
+
+.container__img {
+  width: 38rem;
+}
+
+.project__titles {
+  padding-bottom: 1.4rem;
+}
+
+.project__subtitles::after,
+.project__subtitles::before {
+  content: " ";
+  position: absolute;
+  width: 29px;
+  height: 0.5px;
+  background-color: currentColor;
+  top: 12px;
+}
+
+.project__subtitles::before {
+  left: -39px;
+}
+
+.project__subtitles::after {
+  right: -39px;
+}
+
+@media only screen and (min-width: 430px) {
+  .container__img {
+    width: 90rem;
+    transition: all 0.5s;
+  }
+
+  .container__img:hover {
+    transform: scale(1.02);
+  }
+
+  .container__img--mobiles {
+    width: 55rem;
+    transition: all 0.5s;
+  }
+
+  .container__img--mobiles:hover {
+    transform: scale(1.02);
+  }
+}
+
 /*-------------------- header --------------------*/
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 4rem;
+  padding: 1.5rem 4rem;
   background: rgba(255, 255, 255, 0.7);
-  border: 1px solid #e2e2e2;
+  border: 1px solid #e2e2e25f;
   backdrop-filter: blur(8px);
   position: fixed;
   top: 0rem;
@@ -115,7 +171,7 @@ section {
 }
 
 .header__logo {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: "Nanum Myeongjo", serif;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -176,7 +232,7 @@ section {
 
 @media only screen and (min-width: 430px) {
   .header {
-    padding: 1rem 10rem;
+    padding: 0.5rem 10rem;
     align-items: center;
   }
 
@@ -242,61 +298,10 @@ section {
   }
 }
 
-/*-------------------- common styles --------------------*/
-.container {
-  background-color: var(--light-green);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 2.5rem;
-}
-
-.container__img {
-  width: 38rem;
-}
-
-.project__titles {
-  padding-bottom: 1.4rem;
-}
-
-.project__subtitles::after,
-.project__subtitles::before {
-  content: ' ';
-  position: absolute;
-  width: 29px;
-  height: 0.5px;
-  background-color: currentColor;
-  top: 12px;
-}
-
-.project__subtitles::before {
-  left: -39px;
-}
-
-.project__subtitles::after {
-  right: -39px;
-}
-
-@media only screen and (min-width: 430px) {
-  .container__img {
-    width: 90rem;
-    transition: all 0.5s;
-  }
-
-  .container__img:hover {
-    transform: scale(1.02);
-  }
-
-  .container__img--mobiles {
-    width: 50rem;
-    transition: all 0.5s;
-  }
-
-  .container__img--mobiles:hover {
-    transform: scale(1.02);
-  }
+/*-------------------- good trade section --------------------*/
+.goodtrade__subtitle {
+  display: inline-block;
+  position: relative;
 }
 
 /*-------------------- zensave section --------------------*/
