@@ -64,11 +64,7 @@ a {
 }
 
 img {
-  width: 85%;
-}
-
-.img__mob_desk {
-  max-width: 80%;
+  width: 95%;
 }
 
 section {
@@ -95,6 +91,10 @@ section {
 
   h4 {
     font-size: 1.4rem;
+  }
+
+  img {
+    width: 85%;
   }
 }
 
