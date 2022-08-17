@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
+
+/*-------------------- variables --------------------*/
+:root {
+  --dark-green: #002f33;
+  --white: #ffffff;
+  --light-blue: #f8fbfc;
+  --rose: #ffddd2;
+  --light-green: #00545b;
+  --lighter-green: #006e78;
+}
+
+/*-------------------- reset default styles --------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*-------------------- gral styles --------------------*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  color: var(--dark-green);
+  overflow-x: hidden;
+}
+
+main {
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-green);
+}
+
+img {
+  width: 95%;
+}
+
+section {
+  width: 100%;
+}
+
+.fa-chevron-down,
+.fa-chevron-up {
+  animation: scroll 1.5s linear infinite;
+}
+
+@media only screen and (min-width: 430px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 2.8rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    font-weight: lighter;
+  }
+
+  img {
+    width: 85%;
+  }
+}
+
+/*-------------------- common styles --------------------*/
+.container {
+  background-color: var(--light-blue);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.project__titles {
+  padding-bottom: 1.4rem;
+}
+
+.project__subtitles::after,
+.project__subtitles::before {
+  content: " ";
+  position: absolute;
+  width: 29px;
+  height: 0.5px;
+  background-color: currentColor;
+  top: 8.5px;
+}
+
+.project__subtitles::before {
+  left: -39px;
+}
+
+.project__subtitles::after {
+  right: -39px;
+}
+
+@media only screen and (min-width: 430px) {
+  .container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .container__img--mobiles {
+    width: 55rem;
+    transition: all 0.5s;
+  }
+
+  .container__img--mobiles:hover {
+    transform: scale(1.02);
+  }
+}
+
+/*-------------------- header --------------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #e2e2e25f;
+  backdrop-filter: blur(8px);
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  z-index: 100;
+}
+
+.header__logo {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--dark-green);
+}
+
+.hamburguer.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguer.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburguer.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav__menu {
+  background: rgba(255, 255, 255);
+  display: flex;
+  position: fixed;
+  top: 69.9px;
+  right: -50rem;
+  gap: 0;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 16rem;
+  width: 100%;
+  height: 100vh;
+  transition: 0.3s;
+  list-style: none;
+}
+
+.nav__menu.active {
+  right: 0;
+}
+
+.nav__item {
+  margin: 1.6rem 0;
+}
+
+.nav__link {
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 0.15s ease;
+}
+
+.nav__link:hover {
+  color: var(--light-green);
+}
+
+@media only screen and (min-width: 430px) {
+  .header {
+    padding: 0.5rem 10rem;
+  }
+
+  .hamburguer {
+    display: none;
+  }
+
+  .nav__menu {
+    background: transparent;
+    gap: 4rem;
+    flex-direction: row;
+    width: 100%;
+    position: inherit;
+    padding-top: 0;
+    height: auto;
+  }
+
+  .nav__link {
+    font-size: 1.7rem;
+    font-weight: normal;
+  }
+
+  .nav__icons {
+    display: none;
+  }
+}
+
+/*-------------------- hero section --------------------*/
+
+.hero__subtitle {
+  margin-bottom: 2.4rem;
+  font-size: 2rem;
+}
+
+.hero__lines {
+  display: inline-block;
+  position: relative;
+}
+
+.hero__list {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+@media only screen and (min-width: 430px) {
+  .hero__section {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .hero__titles {
+    margin: 6rem 6rem 0 0;
+  }
+
+  .container__img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .project__subtitles--uppercase {
+    text-transform: uppercase;
+  }
+
+  .hero__text {
+    align-self: flex-start;
+    margin-top: 2rem;
+    margin-right: 6rem;
+    text-align: left;
+  }
+}
+
+/*-------------------- tools section --------------------*/
+
+.tools__section {
+  background-color: var(--light-green);
+  color: var(--light-blue);
+}
+
+.tools__lines {
+  display: inline-block;
+  position: relative;
+}
+
+.tools__title {
+  margin-bottom: 2rem;
+}
+
+.tools__list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 3rem;
+}
+
+.list__container {
+  display: flex;
+}
+
+.list__title {
+  opacity: 12%;
+  font-size: 7rem;
+  font-weight: bolder;
+  width: 15rem;
+}
+
+@media only screen and (min-width: 430px) {
+  .tools__img {
+    width: 50%;
+  }
+
+  .tools__list {
+    flex-direction: row;
+  }
+}
