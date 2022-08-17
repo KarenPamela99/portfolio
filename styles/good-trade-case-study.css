@@ -301,6 +301,7 @@ section {
 .tools__section {
   background-color: var(--light-green);
   color: var(--light-blue);
+  padding: 6rem 2rem;
 }
 
 .tools__lines {
@@ -310,6 +311,11 @@ section {
 
 .tools__title {
   margin-bottom: 2rem;
+}
+
+.tools__img {
+  margin: 3.2rem 0;
+  width: 100%;
 }
 
 .tools__list {
@@ -331,11 +337,21 @@ section {
 }
 
 @media only screen and (min-width: 430px) {
+  .tools__section {
+    height: 100vh;
+  }
+
   .tools__img {
     width: 50%;
+    margin: 5.7rem auto;
+  }
+
+  .tools__title {
+    margin-bottom: 4rem;
   }
 
   .tools__list {
     flex-direction: row;
+    justify-content: center;
   }
 }
