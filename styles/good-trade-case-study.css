@@ -355,3 +355,52 @@ section {
     justify-content: center;
   }
 }
+
+/*-------------------- research section --------------------*/
+
+.research__section {
+  padding: 6rem 2rem 3.2rem;
+  background-color: var(--light-blue);
+}
+
+.research__insights {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding-bottom: 3.2rem;
+  margin-top: 6.4rem;
+}
+
+.insights__img {
+  width: 14.4rem;
+  height: fit-content;
+}
+
+.insights__numbers {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 5.8rem;
+  color: var(--light-green);
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 430px) {
+  .research__section {
+    height: 100vh;
+  }
+
+  .research__divs {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 16rem;
+  }
+
+  .research__insights {
+    flex-direction: column;
+    width: 24rem;
+  }
+
+  .insights__order {
+    order: 1;
+  }
+}
