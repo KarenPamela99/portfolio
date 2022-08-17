@@ -9,38 +9,59 @@
   </head>
 
   <body>
-    <header>
-      <a class="karen" href="/portfolio">KAREN</a>
+    <!-- ------------------ HEADER ------------------ -->
+    <header class="header">
+      <a class="header__logo" href="/">KAREN</a>
 
-      <nav class="nav__desktop">
-        <a href="#">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a href="/" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="/pages/about.html" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
 
-      <nav class="nav__mobile">
-        <i class="fa-solid fa-bars"></i>
+        <div class="hamburguer">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
 
+    <!-- ------------------ MAIN ------------------ -->
     <main>
       <!--hero section-->
-      <section class="hero__section">
-        <div>
-          <h2>Good trade</h2>
-          <p>Responsive web design</p>
+      <section class="hero__section container">
+        <div class="hero__titles">
+          <h1 class="project__titles">Good trade</h1>
+          <h4
+            class="project__subtitles project__subtitles--uppercase hero__lines"
+          >
+            Responsive web design
+          </h4>
         </div>
 
-        <!--falta imagen-->
+        <div class="container__img">
+          <img src="../assets/images/home/good-trade.png" alt="web_design" />
+        </div>
 
-        <div>
-          <h3>Good trade was born from the need of two types of users</h3>
+        <div class="hero__text">
+          <h3 class="hero__subtitle">
+            Good trade was born from the need of two types of users
+          </h3>
           <div>
-            <ul>
-              <li>
+            <ul class="hero__list">
+              <li class="hero__item">
                 People who have recently finished their studies and need a job,
                 and
               </li>
-              <li>
+              <li class="hero__item">
                 Non-profit organizations that need to realize digital projects.
               </li>
             </ul>
@@ -50,12 +71,12 @@
 
       <!--tools section-->
 
-      <section class="tools__section">
+      <section class="tools__section container">
         <div>
           <h2>The process</h2>
-          <p>Methodology</p>
+          <h4 class="project__subtitles tools__lines">Methodology</h4>
         </div>
-        <div>
+        <div class="tools__img">
           <img
             src="../assets/images/goodtrade/method.png"
             alt="Sprint-methodology"
@@ -63,17 +84,40 @@
         </div>
 
         <div>
-          <h3>Main tools</h3>
-          <div>
-            <p>
-              Desk research | lean survey canvas | surveys & interviews |
-              competitive analysis | blueprint strategy | user journey | user
-              flow | user stories | heuristic evaluation | MosCow
-            </p>
-            <p>
-              Moodboard | crazy 8 | wireframing | visual benchmark | atomic
-              design | design system | mid-fi prototype | hi-fi prototype
-            </p>
+          <h3 class="tools__title">Main tools</h3>
+          <div class="tools__list">
+            <div class="list__container">
+              <div>
+                <p class="list__title">UX</p>
+              </div>
+
+              <ul>
+                <li>Desk research</li>
+                <li>Lean survey canvas</li>
+                <li>Surveys & interviews</li>
+                <li>Competitive analysis</li>
+                <li>Blueprint strategy</li>
+                <li>User journey - user flow - user stories</li>
+                <li>Heuristic evaluation</li>
+                <li>MosCow</li>
+              </ul>
+            </div>
+            <div class="list__container">
+              <div>
+                <p class="list__title">UI</p>
+              </div>
+              <ul>
+                <li>Moodboard</li>
+                <li>Crazy 8</li>
+                <li>Wireframing</li>
+                <li>Visual benchmark</li>
+                <li>Atomic design</li>
+                <li>Design system</li>
+                <li>Mid-fi prototype</li>
+                <li>Hi-fi prototype</li>
+                <li>Zeroheight</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -167,8 +211,46 @@
       </section>
 
       <!--Definning section -- images exported x3-->
+
       <section class="define__section">
-        <h2>Define</h2>
+        <h2>Define & ideate</h2>
+        <div>
+          <div>
+            <img
+              src="../assets/images/goodtrade/blueprint.png"
+              alt="blueprint-strategy"
+            />
+            <p>Blueprint strategy - Define phase</p>
+          </div>
+
+          <div>
+            <h3>People with digital profiles need:</h3>
+            <ul>
+              <li>Gain experience in their specialization</li>
+              <li>Present real projects in their portfolio</li>
+              <li>
+                To be able to help organizations that share the same values
+              </li>
+              <li>
+                Do occasional volunteer work that does not require traveling
+                long distances
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Organizations need:</h3>
+            <ul>
+              <li>Keep pace with the digital age to stay afloat</li>
+              <li>Create an image of trust</li>
+              <li>
+                Increase the number of digital volunteers to carry out specific
+                projects
+              </li>
+              <li>Committed volunteers who share the same values</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
   </body>
