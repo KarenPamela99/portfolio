@@ -39,11 +39,11 @@ main {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 
 h2 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 h3 {
   font-size: 1.8rem;
@@ -346,7 +346,6 @@ span {
 
 @media only screen and (min-width: 430px) {
   .tools__section {
-    height: 100vh;
     padding: 10rem 0;
   }
 
@@ -394,7 +393,6 @@ span {
 
 @media only screen and (min-width: 430px) {
   .research__section {
-    height: 100vh;
     padding: 10rem 0;
   }
 
@@ -458,7 +456,6 @@ span {
 
 @media only screen and (min-width: 430px) {
   .users__section {
-    height: 100vh;
     padding: 10rem 0;
   }
 
@@ -593,5 +590,35 @@ span {
     text-align: left;
     padding: 0 6rem;
     width: 50%;
+  }
+}
+
+/*-------------------- advertisings section --------------------*/
+.advertisings__section {
+  background-color: var(--light-blue);
+  padding: 0;
+}
+
+.advertisings__pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advertisings__img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 430px) {
+  .advertisings__section {
+    display: flex;
+    gap: 8rem;
+    padding: 0 8rem;
+    height: 100vh;
+  }
+
+  .advertisings__img {
+    filter: drop-shadow(0px 1px 8px #002f3383);
   }
 }
