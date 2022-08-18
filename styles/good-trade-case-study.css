@@ -71,6 +71,10 @@ section {
   animation: scroll 1.5s linear infinite;
 }
 
+span {
+  font-size: 2rem;
+}
+
 @media only screen and (min-width: 430px) {
   h1 {
     font-size: 4.8rem;
@@ -402,5 +406,67 @@ section {
 
   .insights__order {
     order: 1;
+  }
+}
+
+/*-------------------- users section --------------------*/
+
+.users__section {
+  background-color: var(--rose);
+  padding: 6rem 3.2rem 6.4rem;
+}
+
+.users__avatar {
+  padding: 2.4rem 0;
+}
+
+.users__img {
+  margin-bottom: 0.8rem;
+  border-radius: 50%;
+  width: 12rem;
+  filter: drop-shadow(0px 1px 14px rgba(153, 37, 0, 0.3));
+}
+
+.users__lines {
+  display: inline-block;
+  position: relative;
+}
+
+.users__statements {
+  display: flex;
+  text-align: left;
+  gap: 1.6rem;
+}
+
+.quotes {
+  width: 60%;
+}
+
+.users__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+@media only screen and (min-width: 430px) {
+  .users__section {
+    height: 100vh;
+  }
+
+  .users__container {
+    display: flex;
+    justify-content: center;
+    gap: 16rem;
+    padding: 0 24rem;
+  }
+
+  .users__avatar {
+    padding: 4rem 0;
+  }
+
+  .users__img {
+    width: 20rem;
+    margin-bottom: 1.6rem;
   }
 }
