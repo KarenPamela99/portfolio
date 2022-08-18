@@ -544,3 +544,54 @@ span {
     width: 80rem;
   }
 }
+
+/*-------------------- proposal section --------------------*/
+
+.proposal__section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: var(--light-green);
+  color: var(--white);
+  padding: 6rem 2rem;
+}
+
+.proposal__lofi {
+  margin-bottom: 4rem;
+}
+
+.lofi__pics {
+  margin-bottom: 1.4rem;
+}
+
+.proposal__text--left {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 430px) {
+  .proposal__section {
+    padding: 8rem 16rem;
+  }
+
+  .lofi__pics {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .lofi__imgs {
+    width: 48rem;
+  }
+
+  .proposal__mockup {
+    display: flex;
+    align-items: center;
+  }
+
+  .proposal__text--left {
+    text-align: left;
+    padding: 0 6rem;
+    width: 50%;
+  }
+}
