@@ -708,3 +708,28 @@ span {
     font-weight: lighter;
   }
 }
+
+/*-------------------- prototype section --------------------*/
+.prototype__section {
+  padding: 6rem 2rem 20rem;
+}
+
+.prototype__video {
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+
+@media only screen and (min-width: 430px) {
+  .prototype__video {
+    padding: 36.25% 0 0 0;
+  }
+}
+
+/*-------------------- footer --------------------*/
+footer {
+  background-color: var(--light-green);
+  padding: 4.2rem 0rem;
+  text-align: center;
+  color: var(--white);
+  margin-top: -10.56rem;
+}
