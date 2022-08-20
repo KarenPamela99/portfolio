@@ -50,7 +50,8 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: lighter;
 }
 
 a {
@@ -266,7 +267,7 @@ span {
   font-size: 2rem;
 }
 
-.hero__lines {
+.lines {
   display: inline-block;
   position: relative;
 }
@@ -312,11 +313,6 @@ span {
   padding: 6rem 2rem;
 }
 
-.tools__lines {
-  display: inline-block;
-  position: relative;
-}
-
 .tools__title {
   margin-bottom: 2rem;
 }
@@ -352,10 +348,6 @@ span {
   .tools__img {
     width: 50%;
     margin: 5.7rem auto;
-  }
-
-  .tools__title {
-    margin-bottom: 4rem;
   }
 
   .tools__list {
@@ -430,11 +422,6 @@ span {
   border-radius: 50%;
   width: 12rem;
   filter: drop-shadow(0px 1px 14px rgba(153, 37, 0, 0.3));
-}
-
-.users__lines {
-  display: inline-block;
-  position: relative;
 }
 
 .users__statements {
@@ -607,7 +594,7 @@ span {
 }
 
 .advertisings__img {
-  width: 100%;
+  width: 100vw;
 }
 
 @media only screen and (min-width: 430px) {
@@ -620,5 +607,104 @@ span {
 
   .advertisings__img {
     filter: drop-shadow(0px 1px 8px #002f3383);
+    width: 100%;
+  }
+}
+
+/*-------------------- light&dark section --------------------*/
+.home__section {
+  background-color: var(--light-blue);
+  padding: 6rem 2rem;
+}
+
+.images__container {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-top: 2.4rem;
+}
+
+.themes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.home__image {
+  width: 14rem;
+}
+
+@media only screen and (min-width: 430px) {
+  .images__container {
+    gap: 8rem;
+  }
+
+  /* .material-symbols-outlined {
+    font-size: 10rem;
+  } */
+
+  .home__image {
+    width: 32rem;
+  }
+}
+
+/*-------------------- challenges section --------------------*/
+.challenges__section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: var(--rose);
+  padding: 6rem 2rem;
+}
+
+.challenges__img {
+  width: 6.4rem;
+  margin: 0 auto;
+}
+
+.texts__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.challenges__text {
+  text-align: left;
+}
+
+.challenges__subtitle {
+  margin-bottom: 2.4rem;
+}
+
+.challenges__paragraph {
+  margin-bottom: 1.6rem;
+}
+
+@media only screen and (min-width: 430px) {
+  .challenges__section {
+    padding: 10rem 14rem;
+    gap: 4.8rem;
+  }
+
+  .challenges__img {
+    width: 12rem;
+  }
+
+  .texts__container {
+    flex-direction: row;
+    gap: 4.8rem;
+  }
+
+  .challenges__text {
+    width: 32rem;
+    margin: 0 auto;
+  }
+
+  .challenges__span {
+    font-size: 3.2rem;
+  }
+
+  .challenges__subtitle {
+    font-weight: lighter;
   }
 }
