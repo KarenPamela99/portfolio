@@ -159,7 +159,7 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 4rem;
+  padding: 2.75rem 4rem;
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid #e2e2e25f;
   backdrop-filter: blur(8px);
@@ -201,7 +201,7 @@ span {
   background: rgba(255, 255, 255);
   display: flex;
   position: fixed;
-  top: 60px;
+  top: 85px;
   right: -50rem;
   gap: 0;
   flex-direction: column;
@@ -210,7 +210,6 @@ span {
   width: 100%;
   height: 100vh;
   transition: 0.3s;
-  list-style: none;
 }
 
 .nav__menu.active {
@@ -233,7 +232,7 @@ span {
 
 @media only screen and (min-width: 430px) {
   .header {
-    padding: 0.5rem 10rem;
+    padding: 0.52rem 10rem;
   }
 
   .hamburguer {
@@ -554,7 +553,7 @@ span {
 
 @media only screen and (min-width: 430px) {
   .proposal__section {
-    padding: 8rem 16rem;
+    padding: 10rem 16rem;
   }
 
   .lofi__pics {
@@ -635,13 +634,13 @@ span {
 }
 
 @media only screen and (min-width: 430px) {
+  .home__section {
+    padding: 10rem 2rem;
+  }
+
   .images__container {
     gap: 8rem;
   }
-
-  /* .material-symbols-outlined {
-    font-size: 10rem;
-  } */
 
   .home__image {
     width: 32rem;
@@ -720,9 +719,61 @@ span {
 }
 
 @media only screen and (min-width: 430px) {
+  .prototype__section {
+    padding: 10rem 2rem 20rem;
+  }
+
   .prototype__video {
     padding: 36.25% 0 0 0;
   }
+}
+
+/*-------------------- contact section --------------------*/
+.contact__section {
+  background-color: var(--light-blue);
+}
+
+.icons__ytext {
+  margin-top: -6rem;
+}
+
+.icons {
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.icon__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+  background-color: var(--light-green);
+  transition: all 0.2s;
+}
+
+.contact_link {
+  padding: 25px;
+  border-radius: 50%;
+}
+
+.fa-envelope,
+.fa-linkedin-in,
+.fa-whatsapp {
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+.fa-whatsapp {
+  font-size: 2rem;
+}
+
+.icon__container:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: var(--lighter-green);
 }
 
 /*-------------------- footer --------------------*/
