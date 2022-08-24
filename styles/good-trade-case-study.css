@@ -717,6 +717,17 @@ span {
 .prototype__video {
   padding: 56.25% 0 0 0;
   position: relative;
+  margin-top: 16rem;
+}
+
+.zeroheight__button {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  padding: 1rem 6.4rem;
+  border: 1px solid var(--light-green);
+  border-radius: 1.2rem;
+  background-color: transparent;
+  margin-top: 12rem;
 }
 
 @media only screen and (min-width: 430px) {
