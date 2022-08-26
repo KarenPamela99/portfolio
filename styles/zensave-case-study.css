@@ -261,6 +261,9 @@ span {
 }
 
 /*-------------------- hero section --------------------*/
+.hero__section {
+  padding: 8rem 2rem 6.4rem;
+}
 
 .hero__subtitle {
   margin-bottom: 2.4rem;
@@ -270,6 +273,10 @@ span {
 .lines {
   display: inline-block;
   position: relative;
+}
+
+.container__img {
+  width: 75%;
 }
 
 .hero__list {

@@ -160,7 +160,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.75rem 4rem;
+  padding: 2rem 4rem;
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid #e2e2e25f;
   backdrop-filter: blur(8px);
