@@ -674,7 +674,7 @@ span {
 .zeroheight__button:hover {
   border: 0;
   background-color: var(--light-blue);
-  border: 2px solid #5d76742f;
+  border: 1.4px solid #2e514d2f;
 }
 
 @media only screen and (min-width: 430px) {
