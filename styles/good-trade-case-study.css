@@ -105,6 +105,10 @@ span {
   img {
     width: 85%;
   }
+
+  figcaption {
+    font-size: 1.4rem;
+  }
 }
 
 /*-------------------- common styles --------------------*/
@@ -474,6 +478,14 @@ span {
   padding: 6rem 3.2rem 3.2rem;
 }
 
+.postit__container {
+  padding-top: 3.2rem;
+}
+
+.postit__image {
+  border-radius: 6px;
+}
+
 .define__tool {
   padding: 3.2rem 0;
 }
@@ -505,6 +517,10 @@ span {
     flex-direction: column;
     align-items: center;
     gap: 6rem;
+  }
+
+  .postit__container {
+    width: 75%;
   }
 
   .define__container {
@@ -589,7 +605,7 @@ span {
 .guidestyle__section {
   display: flex;
   flex-direction: column;
-  padding: 6rem 0;
+  padding: 6rem 0 7.2rem;
   gap: 5.6rem;
   align-items: center;
 }
@@ -598,13 +614,18 @@ span {
   margin-bottom: 3.2rem;
 }
 
+.guidestyle__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
 .colors__img {
   padding: 0 2rem;
 }
 
 .typography__div {
   width: 100vw;
-
   background-image: url("../assets/images/projects/goodtrade/typography.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -646,6 +667,55 @@ span {
   border: 1px solid var(--light-green);
   border-radius: 1.2rem;
   background-color: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.zeroheight__button:hover {
+  border: 0;
+  background-color: var(--light-blue);
+  border: 2px solid #5d76742f;
+}
+
+@media only screen and (min-width: 430px) {
+  .guidestyle__section {
+    padding: 10rem 0;
+  }
+
+  .guidestyle__blocks {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .colors__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .colors__img {
+    width: 80%;
+  }
+
+  .typography__div {
+    width: 50%;
+    background-position: 0px 0px;
+  }
+
+  .ptsans__narrow {
+    font-size: 2rem;
+    line-height: 180%;
+  }
+
+  .pt__sans {
+    font-size: 2rem;
+    line-height: 180%;
+  }
+
+  .font__title {
+    font-size: 4rem;
+    margin-bottom: 3.2rem;
+  }
 }
 
 /*-------------------- advertisings section --------------------*/
