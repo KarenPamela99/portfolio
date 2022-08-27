@@ -648,7 +648,7 @@ span {
 .guidestyle__section {
   display: flex;
   flex-direction: column;
-  padding: 6rem 0 7.2rem;
+  padding: 6rem 0 8rem;
   gap: 5.6rem;
   align-items: center;
 }
