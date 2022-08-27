@@ -861,6 +861,24 @@ span {
   margin-top: 16rem;
 }
 
+.prototype__button {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  padding: 1rem 6.4rem;
+  border: 1px solid var(--light-green);
+  border-radius: 1.2rem;
+  background-color: transparent;
+  margin-top: 12rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.prototype__button:hover {
+  border: 0;
+  background-color: var(--light-blue);
+  border: 1.4px solid #2e514d2f;
+}
+
 @media only screen and (min-width: 430px) {
   .prototype__section {
     padding: 10rem 2rem 20rem;
