@@ -115,6 +115,11 @@ section {
 
 .project__titles {
   padding-bottom: 1.4rem;
+  animation: downUp 0.8s ease-out;
+}
+
+.project__subtitles {
+  animation: downUp 0.8s ease-out;
 }
 
 .project__subtitles::after,
@@ -280,6 +285,14 @@ section {
   gap: 2.4rem;
 }
 
+.hero__titles h3 {
+  animation: downUp 0.8s ease-out;
+}
+
+.hero__titles h1 {
+  animation: upDown 0.8s ease-out;
+}
+
 .hero__projects {
   height: 50%;
   margin-top: -28rem;
@@ -405,18 +418,4 @@ footer {
   text-align: center;
   color: var(--white);
   margin-top: -10.56rem;
-}
-
-/*-------------------- animations --------------------*/
-
-@keyframes scroll {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
