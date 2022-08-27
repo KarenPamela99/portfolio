@@ -115,11 +115,6 @@ section {
 
 .project__titles {
   padding-bottom: 1.4rem;
-  animation: downUp 0.8s ease-out;
-}
-
-.project__subtitles {
-  animation: downUp 0.8s ease-out;
 }
 
 .project__subtitles::after,
