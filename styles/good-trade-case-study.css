@@ -126,11 +126,6 @@ span {
 
 .project__titles {
   padding-bottom: 1.4rem;
-  animation: downUp 0.8s ease-out;
-}
-
-.project__subtitles {
-  animation: upDown 0.8s ease-out;
 }
 
 .project__subtitles::after,
@@ -214,7 +209,7 @@ span {
   background: rgba(255, 255, 255);
   display: flex;
   position: fixed;
-  top: 85px;
+  top: 70px;
   right: -50rem;
   gap: 0;
   flex-direction: column;
@@ -274,6 +269,13 @@ span {
 }
 
 /*-------------------- hero section --------------------*/
+.hero__titles h1 {
+  animation: fadeUp 0.8s ease-out;
+}
+
+.hero__titles h4 {
+  animation: fadeDown 0.8s ease-out;
+}
 
 .hero__subtitle {
   margin-bottom: 2.4rem;
