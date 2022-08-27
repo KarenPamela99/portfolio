@@ -232,6 +232,14 @@ a {
   padding-top: 2rem;
 }
 
+.hero__text h1 {
+  animation: downUp 0.8s ease-out;
+}
+
+.hero__text p {
+  animation: upDown 0.8s ease-out;
+}
+
 .picture__img {
   width: 22rem;
 }
