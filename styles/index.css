@@ -135,6 +135,47 @@ section {
   right: -39px;
 }
 
+.inprogress {
+  position: relative;
+  transition: all 0.5s;
+}
+
+.inprogress__text--kukara {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.inprogress--kukara:hover {
+  opacity: 0.3;
+  filter: blur(5px);
+}
+
+.container__img:hover .inprogress__text--kukara {
+  opacity: 1;
+}
+
+.inprogress__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.inprogress:hover {
+  opacity: 0.3;
+  filter: blur(5px);
+}
+
+.container__img--mobiles:hover .inprogress__text {
+  opacity: 1;
+}
+
 @media only screen and (min-width: 430px) {
   .container__img {
     width: 90rem;
@@ -336,24 +377,25 @@ section {
   color: var(--white);
 }
 
-/*-------------------- storytel section --------------------*/
-.storytel__section {
+/*-------------------- kukaramakara section --------------------*/
+
+.kukaramakara__section {
   background-color: var(--light-blue);
   height: 100vh;
 }
 
-.storytel__subtitle {
+.kukara__subtitle {
   display: inline-block;
   position: relative;
 }
-/*-------------------- kukaramakara section --------------------*/
 
-.kukaramakara__section {
+/*-------------------- storytel section --------------------*/
+.storytel__section {
   background-color: var(--rose);
   height: 100vh;
 }
 
-.kukara__subtitle {
+.storytel__subtitle {
   display: inline-block;
   position: relative;
 }
