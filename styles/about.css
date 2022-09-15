@@ -359,7 +359,7 @@ a {
 }
 
 .software__part {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -372,6 +372,10 @@ a {
 @media only screen and (min-width: 430px) {
   .icons__software {
     width: 5%;
+  }
+
+  .software__part {
+    gap: 4.8rem;
   }
 }
 
