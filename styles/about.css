@@ -241,15 +241,15 @@ a {
 }
 
 .picture__img {
-  width: 22rem;
+  width: 20rem;
 }
 
 .hero__2ndpart {
   height: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 1rem 4rem;
+  justify-content: space-between;
+  padding: 1rem 2rem 0;
 }
 
 .hero__description {
@@ -269,7 +269,7 @@ a {
   }
 
   .picture__img {
-    width: 54rem;
+    width: 56rem;
     margin-bottom: -6px;
   }
 
@@ -282,7 +282,11 @@ a {
   }
 
   .hero__text {
-    padding: 0 1rem;
+    padding: 0 4rem;
+  }
+
+  .p1__description {
+    padding-top: 1.4rem;
   }
 }
 
