@@ -135,6 +135,10 @@ section {
   right: -39px;
 }
 
+.fa-chevron-down {
+  padding-top: 1.6rem;
+}
+
 .inprogress {
   position: relative;
   transition: all 0.5s;
