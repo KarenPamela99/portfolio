@@ -2,9 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /*-------------------- variables --------------------*/
 :root {
@@ -383,20 +381,33 @@ span {
 /*-------------------- research section --------------------*/
 
 .research__section {
-  padding: 6rem 2.4rem 3.2rem;
+  padding: 6rem 2.4rem 8.8rem;
   background-color: var(--light-blue);
+}
+
+.research__divs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding-top: 6.4rem;
+}
+
+.insights__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
 }
 
 .research__insights {
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  padding: 4.8rem 1rem;
-  margin-top: 3.2rem;
+  padding: 0rem 1rem;
 }
 
 .insights__img {
-  width: 24%;
+  width: 22%;
 }
 
 .insights__numbers {
@@ -446,10 +457,13 @@ span {
   }
 
   .research__divs {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    gap: 16rem;
+    gap: 8rem;
+    margin-bottom: 5.6rem;
+  }
+
+  .insights__container {
+    flex-direction: row;
+    gap: 8.8rem;
   }
 
   .research__insights {
@@ -460,6 +474,13 @@ span {
 
   .insights__order {
     order: 1;
+  }
+
+  .reviews__container {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 6.4rem;
+    padding: 0 14rem;
   }
 }
 
@@ -594,7 +615,7 @@ span {
   }
 
   .define__tool {
-    width: 80rem;
+    width: 100%;
   }
 }
 
@@ -666,7 +687,7 @@ span {
 }
 
 .colors__img {
-  padding: 0 2rem;
+  padding: 0 4rem;
 }
 
 .typography__div {
@@ -683,7 +704,7 @@ span {
 }
 
 .ptsans__narrow {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: left;
   font-size: 1.4rem;
   line-height: 165%;
@@ -703,23 +724,6 @@ span {
 
 .lowercase {
   text-transform: lowercase;
-}
-
-.zeroheight__button {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1.6rem;
-  padding: 1rem 6.4rem;
-  border: 1px solid var(--light-green);
-  border-radius: 1.2rem;
-  background-color: transparent;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-
-.zeroheight__button:hover {
-  border: 0;
-  background-color: var(--light-blue);
-  border: 1.4px solid #2e514d2f;
 }
 
 @media only screen and (min-width: 430px) {
