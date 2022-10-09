@@ -384,7 +384,7 @@ section {
 /*-------------------- kukaramakara section --------------------*/
 
 .kukaramakara__section {
-  background-color: var(--light-blue);
+  background-color: var(--rose);
   height: 100vh;
 }
 
@@ -395,7 +395,7 @@ section {
 
 /*-------------------- storytel section --------------------*/
 .storytel__section {
-  background-color: var(--rose);
+  background-color: var(--light-blue);
   height: 100vh;
 }
 
