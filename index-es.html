@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <title>Karen - UX/UI Designer</title>
+  </head>
+
+  <body>
+    <!-- ------------------ HEADER ------------------ -->
+    <header class="header">
+      <a class="header__logo" href="/">KAREN</a>
+
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a href="/" class="nav__link">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="/pages/about.html" class="nav__link">Sobre mí</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contacto</a>
+          </li>
+          <li class="nav__item">
+            <a href="/" class="nav__link">EN</a>
+            <span>|</span>
+            <a
+              href="./index-es.html"
+              class="nav__link"
+              style="font-weight: bold"
+              >ES</a
+            >
+          </li>
+        </ul>
+
+        <div class="hamburguer">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ------------------ MAIN ------------------ -->
+    <main>
+      <!-- ------------------ Hero section ------------------ -->
+      <section id="top" class="hero__section">
+        <div class="hero__titles">
+          <h3>Hola! Soy Karen</h3>
+          <h1>Soy Diseñadora UX UI</h1>
+        </div>
+        <div class="hero__projects">
+          <a class="projects" href="#zensave">
+            <div>
+              <h4>PROYECTOS</h4>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ------------------ Zensave section ------------------ -->
+      <section id="zensave" class="container zensave__section">
+        <a href="#">
+          <div>
+            <h2 class="zensave__title project__titles">Zensave</h2>
+            <p class="zensave__subtitle project__subtitles">Diseño de app</p>
+          </div>
+        </a>
+
+        <a href="./pages/zensave-case-study.html" target="_blank">
+          <div class="container__img--mobiles">
+            <img src="./assets/images/home/zensave.png" alt="app_design" />
+          </div>
+        </a>
+
+        <a href="#goodtrade">
+          <div>
+            <h4 class="zensave__next">Siguiente proyecto</h4>
+            <i class="fa-solid fa-chevron-down fa-chevron-down--white"></i>
+          </div>
+        </a>
+      </section>
+
+      <!-- ------------------ Good trade section ------------------ -->
+
+      <section id="goodtrade" class="container storytel__section">
+        <a href="/pages/good-trade-case-study.html">
+          <div>
+            <h2 class="project__titles animation">Good trade</h2>
+            <p class="goodtrade__subtitle project__subtitles animation">
+              Diseño web
+            </p>
+          </div>
+        </a>
+
+        <a href="/pages/good-trade-case-study.html" target="_blank">
+          <div class="container__img">
+            <img src="./assets/images/home/good-trade.png" alt="web_design" />
+          </div>
+        </a>
+
+        <a href="#storytel">
+          <div>
+            <h4>Siguiente proyecto</h4>
+            <i class="fa-solid fa-chevron-down fa-chevron-down"></i>
+          </div>
+        </a>
+      </section>
+
+      <!-- ------------------ Kukaramakara section ------------------ -->
+      <section id="kukara" class="container kukaramakara__section">
+        <a href="#">
+          <div>
+            <h2 class="project__titles">Kukaramákara</h2>
+            <p class="kukara__subtitle project__subtitles">Rediseño web</p>
+          </div>
+        </a>
+
+        <a href="./pages/kukara-case-study.html" target="_blank">
+          <div class="container__img">
+            <img
+              class="img__mob_desk"
+              id="img__kukara"
+              src="./assets/images/home/kukara.png"
+              alt="app_design"
+            />
+          </div>
+        </a>
+        <a href="#kukara">
+          <div>
+            <h4>Siguiente proyecto</h4>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </a>
+      </section>
+
+      <!-- ------------------ Storytel section ------------------ -->
+      <section id="storytel" class="container storytel__section">
+        <!-- <a href="#"> -->
+        <div>
+          <h2 class="project__titles">Storytel</h2>
+          <p class="storytel__subtitle project__subtitles">
+            Nueva funcionalidad
+          </p>
+        </div>
+        <!-- </a> -->
+
+        <!-- <a href=""> -->
+        <div class="container__img--mobiles">
+          <img
+            class="inprogress"
+            src="./assets/images/home/storytel.png"
+            alt="app_design"
+          />
+          <h4 class="inprogress__text">En progreso</h4>
+        </div>
+        <!-- </a> -->
+        <a href="#contact">
+          <div>
+            <h4>Contacto</h4>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </a>
+      </section>
+
+      <!-- ------------------ contact section ------------------ -->
+      <section id="contact" class="container contact__section">
+        <h2 class="contact__me">Contáctame</h2>
+        <div class="icons__ytext">
+          <div class="icons">
+            <div class="icon__container">
+              <a class="contact_link" href="mailto:karen.pam99@gmail.com"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+
+            <div class="icon__container">
+              <a
+                class="contact_link"
+                target="_blank"
+                href="https://www.linkedin.com/in/karenpamelauxui/?locale=en_US"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+
+            <div class="icon__container">
+              <a
+                class="contact_link"
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=34604549971"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <p>Estaré encantada de hablar contigo</p>
+        </div>
+
+        <a href="#top">
+          <div>
+            <i class="fa-solid fa-chevron-up"></i>
+            <h4>Ir al inicio</h4>
+          </div>
+        </a>
+      </section>
+    </main>
+
+    <!-- ------------------ FOOTER ------------------ -->
+    <footer>
+      <p>&#169; 2022 · Made with <i class="fa-solid fa-heart"></i> by Karen</p>
+    </footer>
+
+    <!-- ------------------ SCRIPTS ------------------ -->
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
