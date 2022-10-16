@@ -549,7 +549,7 @@ span {
 
 .define__section {
   background-color: var(--light-blue);
-  padding: 6rem 3.2rem 3.2rem;
+  padding: 6rem 2.4rem 3.2rem;
 }
 
 .postit__container {
@@ -583,14 +583,15 @@ span {
 
 @media only screen and (min-width: 430px) {
   .define__section {
-    padding: 10rem 24rem;
+    padding: 10rem 16rem;
   }
 
   .define__flex {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6rem;
+    padding-top: 2rem;
+    gap: 10rem;
   }
 
   .postit__container {
@@ -605,20 +606,22 @@ span {
   }
 
   .mockup__imgs {
-    width: 60%;
+    width: 200%;
   }
 
   .define__column {
     display: flex;
     align-items: center;
+    width: 80vw;
   }
 
   .users__needs {
     order: 1;
+    width: 90%;
   }
 
   .define__tool {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -653,6 +656,11 @@ span {
     padding: 10rem 16rem;
   }
 
+.proposal__text {
+  width: 50%;
+  align-self: center;
+}
+
   .lofi__imgs {
     width: 48rem;
   }
@@ -665,7 +673,7 @@ span {
   .proposal__text--left {
     text-align: left;
     padding: 0 6rem;
-    width: 50%;
+    width: 70%;
   }
 }
 
