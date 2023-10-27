@@ -1,0 +1,17 @@
+.challenges-section {
+  display: flex;
+}
+
+.challenge-container {
+  width: 36rem;
+}
+
+.challenge-container img {
+  border-radius: 40px;
+  box-shadow: 0px 1px 14px 0px #9925004d;
+}
+
+.challenges__subtitle {
+  margin-top: 2.4rem;
+  margin-bottom: 0.4rem;
+}
