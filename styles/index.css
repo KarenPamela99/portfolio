@@ -124,7 +124,7 @@ section {
   width: 29px;
   height: 0.5px;
   background-color: currentColor;
-  top: 12px;
+  top: 10px;
 }
 
 .project__subtitles::before {
